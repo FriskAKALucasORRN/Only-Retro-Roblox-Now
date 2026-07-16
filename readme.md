@@ -1,5 +1,5 @@
 # OnlyRetroRobloxNow
-![Alt text](OnlyRetroRobloxHere/resources/launcher/bannerlongsummer.png)
+![Alt text](OnlyRetroRobloxHere/resources/launcher/bannerlong.png)
 
 This repository contains the source code for Only Retro Roblox Here, This project, "Only Retro Roblox Now", is a continuation of ORRH-ng as it has also been discontinued along with ORRH. This project will add a bunch of features and also just fix a whole lot of bugs with ORRH.
 
