@@ -60,7 +60,7 @@
                         <Separator />
                         <controls:SelectableButton Click="OnNavigationButtonClick" BorderThickness="0" Content="About" Style="{StaticResource RightNavigationButton}" Tag="About" />
                         <Separator />
-                        <controls:SelectableButton Click="OnNavigationButtonClick" BorderThickness="0" Content="Doc" Style="{StaticResource RightNavigationButton}" Tag="Documentation" />
+                        <controls:SelectableButton Click="OnNavigationButtonClick" BorderThickness="0" Content="Doc" Style="{StaticResource RightNavigationButton}" Tag="Documentatio" />
                     </StackPanel>
                     <Border Height="10" SnapsToDevicePixels="True" UseLayoutRounding="True">
                         <Border.Background>
