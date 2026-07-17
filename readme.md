@@ -3,8 +3,26 @@
 
 This repository contains the source code for Only Retro Roblox Here, This project, "Only Retro Roblox Now", is a continuation of ORRH-ng as it has also been discontinued along with ORRH. This project will add a bunch of features and also just fix a whole lot of bugs with ORRH.
 
---NOTE THAT THIS PART OF THE README IS FROM ORRH-ng, CREDITS TO THEM!
+## PLANS
+Currently, here are our plans for ORRN.
+- Custom Client Support [However, we wont actually be adding clients. The default ORRH ones will stay because I don't want to spend time reverse engineering the ORRH patching DLL. Sorry!
+
+- x64 and x86 user support! [Yes I care about you x86 users!]
+
+- Windows XP/Vista support! [Via 1 core API]
+
+- Info Tab!
+
+- Selectable themes!
+
+- A whole BUNCH of patches/bug fixes
+
+- A debug mode so if something isnt working, you can clearly see why instead of getting unclear, vague answers!
+
+- Much, Much more!
+
 ## Credits
+--NOTE THAT THIS PART OF THE README IS FROM ORRH-ng, CREDITS TO THEM!
 Credit to Matt, the original creator of ORRH! It hopes he understands this project is not intended to harm his reputation or usurp credit, he did the vast majority of work on this project.
 
 
