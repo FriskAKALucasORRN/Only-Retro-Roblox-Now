@@ -58,7 +58,7 @@
                         <Separator />
                         <controls:SelectableButton Click="OnNavigationButtonClick" Content="Settings" Style="{StaticResource RightNavigationButton}" Tag="Settings" />
                         <Separator />
-                        <controls:SelectableButton Click="OnNavigationButtonClick" BorderThickness="0" Content="About" Style="{StaticResource RightNavigationButton}" Tag="About" />
+                        <controls:SelectableButton Click="OnNavigationButtonClick" BorderThickness="0" Content="Credits" Style="{StaticResource RightNavigationButton}" Tag="About" />
                         <Separator />
                         <controls:SelectableButton Click="OnNavigationButtonClick" BorderThickness="0" Content="Info" Style="{StaticResource RightNavigationButton}" Tag="Info" />
                     </StackPanel>
