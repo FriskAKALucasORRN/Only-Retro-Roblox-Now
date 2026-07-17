@@ -19,11 +19,6 @@ public partial class AboutPage : BasePage, IComponentConnector
         base.DataContext = _viewModel;
 	}
 
-	private void OnMattHeadClicked(object sender, RoutedEventArgs e)
-	{
-		_viewModel.MattHeadSize++;
-	}
-
 	private void OnGithubIconClicked(object sender, RoutedEventArgs e)
 	{
 		Utils.OpenUrl("https://github.com/FriskAKALucasORRN/Only-Retro-Roblox-Now");

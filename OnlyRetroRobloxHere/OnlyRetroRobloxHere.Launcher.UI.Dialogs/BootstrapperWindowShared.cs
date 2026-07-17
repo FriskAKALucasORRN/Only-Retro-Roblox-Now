@@ -86,7 +86,7 @@ public class BootstrapperWindowShared : Window
 		});
 		if (showMessage)
 		{
-			MessageBox.Show("The client closed unexpectedly! (0x" + exitCode.ToString("X") + ")", "Only Retro Roblox Here", MessageBoxButton.OK, MessageBoxImage.Hand);
+			MessageBox.Show("The client closed unexpectedly! (0x" + exitCode.ToString("X") + ")", "Only Retro Roblox Now", MessageBoxButton.OK, MessageBoxImage.Hand);
 		}
 	}
 

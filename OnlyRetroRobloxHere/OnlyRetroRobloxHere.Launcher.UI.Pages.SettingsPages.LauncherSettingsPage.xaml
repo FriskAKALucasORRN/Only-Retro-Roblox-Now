@@ -17,7 +17,7 @@
         <GroupBox Margin="0,0,0,2" Padding="2" Foreground="#AFCDE0" Header="Bootstrapper Style" UseLayoutRounding="True">
             <StackPanel>
                 <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockWhite}" Text="Decides what bootstrapper appears when launching any client in ORRH." />
-                <ComboBox Width="200" HorizontalAlignment="Left" ItemsSource="{Binding Path=BootstrapperLaunchTypes, Mode=OneTime}" SelectedItem="{Binding Path=BootstrapperLaunchType, Mode=TwoWay}">
+                <ComboBox Width="200" HorizontalAlignment="Left" ItemsSource="{Binding Path=BootstrapperLaunchTypes, Mode=OneTime}" SelectedItem="{Binding Path=BootstrapperLaunchType, Mode=TwoWay}" ToolTip="NOTE: If you're having the An Unexpected Error Occured and Roblox needs to quit problem, try to disable this!">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding Converter={StaticResource EnumToDescriptionConverter}}" />
@@ -31,16 +31,17 @@
                 <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockWhite}" Text="Your .ROBLOSECURITY cookie." />
                 <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockWhite}" Text="This field is completely optional and will only be used for asset delivery requests." />
                 <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockWhite}" Text="It is recommended take the cookie from a burner account." />
+                <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockGrey}" Text="     NOTE: If you are using default ORRH assets, you may not need a cookie!" />
                 <PasswordBox Name="RobloxCookieBox" />
             </StackPanel>
         </GroupBox>
         <GroupBox Padding="2" Foreground="#AFCDE0" Header="Updater" UseLayoutRounding="True">
             <StackPanel>
                 <StackPanel Margin="0,0,0,2" Orientation="Horizontal">
-                    <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockGrey}" Text="Disable only when needed. With this off, you can become out of date quickly." />
+                    <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockWhite}" Text="   Disable only when needed. With this off, you can become out of date quickly." />
                 </StackPanel>
                 <StackPanel Margin="0,0,0,2" Orientation="Horizontal">
-                    <CheckBox Margin="0,0,5,0" Content="Enable Asset Update" IsChecked="{Binding Path=DoUpdateAssets, Mode=TwoWay}" />
+                    <CheckBox Margin="0,0,5,0" Content="Enable Asset Update" IsChecked="{Binding Path=DoUpdateAssets, Mode=TwoWay}" /> <!--What even does this do? No seriously like. What do you do?-->
                 </StackPanel>
                 <StackPanel Margin="0,0,0,2" Orientation="Horizontal">
                     <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockGreen}" Text="You are Up-to-date!" Visibility="{Binding Path=UpToDate, Mode=OneWay}" />
@@ -48,6 +49,15 @@
                 <StackPanel Margin="0,0,0,2" Orientation="Horizontal">
                     <TextBlock Margin="0,0,0,2" Style="{StaticResource TextBlockRed}" Visibility="{Binding Path=OutOfDate, Mode=OneWay}" Text="{Binding Path=UpdateNotice, Mode=OneWay}" />
                 </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Padding="2" Foreground="#AFCDE0" Header="Asset Delivery URL" UseLayoutRounding="True" Height="76">
+            <StackPanel Height="42">
+                <StackPanel Margin="0,0,0,2" Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TextBlockWhite}" Text="      If you're too lazy to get a cookie, change the Asset Delivery URL instead!" Height="16" />
+                </StackPanel>
+                <!-- This code is so poorly written it's held up by noodle sticks. -->
+                <TextBox Name="AssetURL" ToolTip="Enter a custom Asset Delivery URL. Useful for older Windows versions [XP/Vista/7/8/8.1] and also if you dont want to put in a cookie."/>
             </StackPanel>
         </GroupBox>
     </StackPanel>

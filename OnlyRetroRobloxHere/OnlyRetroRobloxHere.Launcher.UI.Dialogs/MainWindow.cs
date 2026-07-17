@@ -46,8 +46,9 @@ public partial class MainWindow : Window, IComponentConnector
 			"Inventory" => new InventoryPage(), 
 			"AssetPacks" => new AssetPacksPage(), 
 			"Settings" => new SettingsPage(), 
-			"About" => new AboutPage(), 
-			_ => throw new Exception("Unrecognised page name"), 
+			"About" => new AboutPage(),
+			"Info" => new AboutPage(),
+            _ => throw new Exception("Unrecognised page name"), 
 		};
 	}
 

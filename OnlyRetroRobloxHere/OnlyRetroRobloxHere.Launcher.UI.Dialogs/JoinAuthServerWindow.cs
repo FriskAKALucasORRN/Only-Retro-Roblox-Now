@@ -15,7 +15,7 @@ namespace OnlyRetroRobloxHere.Launcher.UI.Dialogs;
 
 public partial class JoinAuthServerWindow : Window, IComponentConnector
 {
-	private const string UnsupportedApiError = "This server requires a newer version of Only Retro Roblox Here";
+	private const string UnsupportedApiError = "This server requires a newer version of Only Retro Roblox Now or You Need Regular ORRH";
 
 	private JoinAuthServerViewModel _viewModel;
 
@@ -140,7 +140,7 @@ public partial class JoinAuthServerWindow : Window, IComponentConnector
 		catch (DeprecatedApiException)
 		{
 			Logger.Instance.Error("Requested check key API is deprecated!");
-			_viewModel.Status = "This server requires a newer version of Only Retro Roblox Here";
+			_viewModel.Status = "This server requires a newer version of Only Retro Roblox Now or you need ORRH";
 			return;
 		}
 		if (flag)
@@ -164,7 +164,7 @@ public partial class JoinAuthServerWindow : Window, IComponentConnector
 		catch (DeprecatedApiException)
 		{
 			Logger.Instance.Error("Requested auth status API is deprecated!");
-			_viewModel.Status = "This server requires a newer version of Only Retro Roblox Here";
+			_viewModel.Status = "This server requires a newer version of Only Retro Roblox Now or you need ORRH";
 			return;
 		}
 		if (flag)

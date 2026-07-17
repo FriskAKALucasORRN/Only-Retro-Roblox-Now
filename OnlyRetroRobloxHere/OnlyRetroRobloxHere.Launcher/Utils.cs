@@ -39,7 +39,7 @@ internal static class Utils
 
     public static MessageBoxResult ShowMessageBox(string message, MessageBoxButton button, MessageBoxImage image)
     {
-        return MessageBox.Show(message, "Only Retro Roblox Here", button, image);
+        return MessageBox.Show(message, "Only Retro Roblox Now", button, image);
     }
 
     public static void ClearClientAddonsCache()

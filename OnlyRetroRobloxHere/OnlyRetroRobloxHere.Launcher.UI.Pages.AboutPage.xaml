@@ -25,7 +25,7 @@
             </Border.Background>
         </Border>
         <TextBlock Margin="0,0,0,5" Style="{StaticResource TextBlockWhite}" TextAlignment="Center" Text="{Binding Path=Version, Converter={StaticResource StringFormatConverter}, ConverterParameter=Version {0}, Mode=OneTime}" />
-        <TextBlock FontSize="24" FontWeight="Bold" Style="{StaticResource TextBlockRed}" Text="Distributing private builds of ORRbxH is prohibited." TextAlignment="Center" Visibility="{Binding Path=PrivateVersionWarningVisibility, Mode=OneTime}" />
+        <TextBlock FontSize="24" FontWeight="Bold" Style="{StaticResource TextBlockRed}" Text="Distributing private builds of ORRbxN is prohibited." TextAlignment="Center" Visibility="{Binding Path=PrivateVersionWarningVisibility, Mode=OneTime}" />
         <TextBlock FontSize="16" FontWeight="Bold" Style="{StaticResource TextBlockRed}" Text="Debug is enabled." TextAlignment="Center" Visibility="{Binding Path=DebugVersionWarningVisibility, Mode=OneTime}" />
 
         <Grid Margin="10">
@@ -46,13 +46,7 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <StackPanel Grid.RowSpan="100" Grid.Column="0">
-                            <Button Width="120" Padding="0" Background="#00FFFFFF" BorderThickness="0" Cursor="Arrow" Style="{StaticResource ButtonNoEffects}" Height="{Binding Path=MattHeadSize, Mode=OneWay}" Click="OnMattHeadClicked">
-                                <Image RenderOptions.BitmapScalingMode="HighQuality" Source="pack://application:,,,/OnlyRetroRobloxHere;component/Resources/Launcher/TheTeam/MattHead.png" Stretch="Fill" />
-                            </Button>
-                            <Image Width="120" Height="134" RenderOptions.BitmapScalingMode="HighQuality" Source="pack://application:,,,/OnlyRetroRobloxHere;component/Resources/Launcher/TheTeam/MattBody.png" />
-                        </StackPanel>
-                        <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Style="{StaticResource TextBlockWhite}" Text="Matt" TextWrapping="Wrap" />
+                        <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Style="{StaticResource TextBlockWhite}" Text="Matt [ORRH creator]" TextWrapping="Wrap" />
                         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="12" Style="{StaticResource TextBlockWhite}" Text="The guy originally behind this...&#x0a;I think..." TextWrapping="Wrap" />
                     </Grid>
 
@@ -65,11 +59,13 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <StackPanel Grid.RowSpan="100" Grid.Column="0">
-                            <Image Width="120" Height="197" RenderOptions.BitmapScalingMode="HighQuality" Source="pack://application:,,,/OnlyRetroRobloxHere;component/Resources/Launcher/TheTeam/remilia.png" />
-                        </StackPanel>
-                        <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Style="{StaticResource TextBlockWhite}" Text="Remilia" TextWrapping="Wrap" />
+                        <StackPanel Grid.RowSpan="100" Grid.Column="0"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Style="{StaticResource TextBlockWhite}" Text="Remilia [ORRH-ng creator]" TextWrapping="Wrap" />
                         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="12" Style="{StaticResource TextBlockWhite}" Text="Do you rememeber how many&#x0a;slices of bread you've eaten?" TextWrapping="Wrap" />
+                        <TextBlock Grid.Column="1" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Style="{StaticResource TextBlockWhite}" Text="Frisk/Lucas [Project Creator]" TextWrapping="Wrap" Margin="0,47,0,0" Grid.Row="1" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="12" Style="{StaticResource TextBlockWhite}" Text="do you habeth thy chicken?" TextWrapping="Wrap" Margin="0,70,0,0" />
+                        <TextBlock Grid.Column="1" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Style="{StaticResource TextBlockWhite}" Text="Jay-Jay17 [Project Developer]" TextWrapping="Wrap" Margin="5,106,-5,0" Grid.Row="1" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" FontSize="12" Style="{StaticResource TextBlockWhite}" Text="Oops.. No Quote Found! [404]" TextWrapping="Wrap" Margin="0,129,0,0" />
                     </Grid>
 
                 </StackPanel>
@@ -79,7 +75,7 @@
 
                 <controls:StandardBox HeaderText="About Us">
                     <StackPanel>
-                        <TextBlock Margin="0,0,0,10" Style="{StaticResource TextBlockWhite}" Text="Only Retro Roblox Here provides an easy way to play legacy versions of Roblox with a simple user interface." TextWrapping="Wrap" />
+                        <TextBlock Margin="0,0,0,10" Style="{StaticResource TextBlockWhite}" Text="Only Retro Roblox Now provides an easy way to play legacy versions of Roblox with a simple user interface." TextWrapping="Wrap" />
                         <TextBlock Margin="0,0,0,10" Style="{StaticResource TextBlockWhite}" Text="This is entirely a passion project." TextWrapping="Wrap" />
                         <TextBlock Margin="0,0,0,10" Style="{StaticResource TextBlockWhite}" Text="All microtransactions present in the launcher are jokes. No real world money is involved in ORRH." TextWrapping="Wrap" />
                         <TextBlock Margin="0,0,0,10" Style="{StaticResource TextBlockWhite}" Text="I can not guarantee the safety of any clients included. Please play with friends or people you trust!" TextWrapping="Wrap" />

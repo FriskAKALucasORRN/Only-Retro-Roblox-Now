@@ -15,7 +15,7 @@ internal class TTSSettingsViewModel : ViewModelBase
 
 	public ObservableCollection<string> TTSVoices { get; } = new ObservableCollection<string>();
 
-	public string TTSError { get; set; } = "An error occured while fetching available voices!";
+	public string TTSError { get; set; } = "TTS Has been Removed until further notice. We Are Sorry! :-(";
 
 	public bool TTSEnabled
 	{
