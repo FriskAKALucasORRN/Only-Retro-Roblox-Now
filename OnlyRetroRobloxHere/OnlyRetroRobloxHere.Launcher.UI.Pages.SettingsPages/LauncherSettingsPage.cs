@@ -35,14 +35,16 @@ public partial class LauncherSettingsPage : BasePage, IComponentConnector
 		BrowseDirectory();
 	}
 
-	private void OnRobloxCookieChanged(object sender, RoutedEventArgs e)
+    private void OnRobloxCookieChanged(object sender, RoutedEventArgs e)
 	{
 		SecureSettings.Default.RobloxCookie = RobloxCookieBox.Password;
-	}
+        SecureSettings.Save();
+    }
 
 	private void OnAssetUrlChanged(object sender, RoutedEventArgs e)
 	{
 		SecureSettings.Default.AssetUrl = AssetURLBox.Text;
+        SecureSettings.Save();
     }
 
     public override void OnPageOpening()

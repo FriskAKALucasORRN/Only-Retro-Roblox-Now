@@ -34,8 +34,8 @@ internal static class AssetDelivery
 		return new HttpRequestMessage
 		{
 			Method = HttpMethod.Post,
-			RequestUri = new Uri("https://assetdelivery.roblox.com/v2/assets/batch"),
-			Headers = 
+            RequestUri = new Uri("https://assetdelivery.roblox.com/v2/assets/batch"),
+            Headers = 
 			{
 				{ "user-agent", "Roblox/WinInet" },
 				{

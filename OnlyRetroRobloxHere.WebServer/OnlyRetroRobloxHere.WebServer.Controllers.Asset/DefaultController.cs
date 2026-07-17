@@ -78,8 +78,16 @@ public class DefaultController : ControllerBase
 
 	private async Task<IActionResult> RedirectToRoblox()
 	{
-		string url = $"https://assetdelivery.roblox.com/v1/asset/{base.Request.QueryString}";
-		if (Config.Instance.Client.ClientWillDieIfAHttpRedirectHappens && string.IsNullOrEmpty(SecureSettings.Default.RobloxCookie))
+        string baseUrl = SecureSettings.Default.AssetUrl;
+        if (string.IsNullOrWhiteSpace(baseUrl))
+        {
+            baseUrl = "https://assetdelivery.roblox.com/v1/asset/";
+        }
+
+        string url = $"{baseUrl}{base.Request.QueryString}";
+
+        Logger.Instance.Info($"Asset URL: {url}");
+        if (Config.Instance.Client.ClientWillDieIfAHttpRedirectHappens && string.IsNullOrEmpty(SecureSettings.Default.RobloxCookie))
 		{
 			return File(await Common.HttpClient.GetByteArrayAsync(url), "application/octet-stream");
 		}
@@ -103,8 +111,8 @@ public class DefaultController : ControllerBase
 			}
 			return Redirect(text);
 		}
-		return Redirect(url);
-	}
+		return Redirect(url); //Dear matt, WHY SO MANY IF STATEMENTS? I HATE THEM. -Sincerely, Frisk/Lucas
+    }
 
 	[HttpGet]
 	[HttpHead]
