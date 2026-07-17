@@ -26,12 +26,12 @@ public partial class AboutPage : BasePage, IComponentConnector
 
 	private void OnGithubIconClicked(object sender, RoutedEventArgs e)
 	{
-		Utils.OpenUrl("https://github.com/soundseraph/OnlyRetroRobloxHere-ng");
+		Utils.OpenUrl("https://github.com/FriskAKALucasORRN/Only-Retro-Roblox-Now");
 	}
 
 	private void OnDiscordIconClicked(object sender, RoutedEventArgs e)
 	{
-		Utils.OpenUrl("https://discord.gg/TtnfRuFu7P");
+		Utils.OpenUrl("https://discord.gg/8FT3ApxhP8");
 	}
 
 	public override void OnPageOpening()

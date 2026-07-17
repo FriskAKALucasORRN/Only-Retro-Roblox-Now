@@ -185,6 +185,7 @@
 		<None Remove="resources\membership\buildersclub.png" />
 		<Page Remove="OnlyRetroRobloxHere.Launcher.App.xaml" />
 		<ApplicationDefinition Include="OnlyRetroRobloxHere.Launcher.App.xaml" />
+		<Content Include="app.ico" />
 		<Resource Include="resources\bannerfall.png" />
 		<Resource Include="resources\bannerpride.png" />
 		<Resource Include="resources\bannerspring.png" />

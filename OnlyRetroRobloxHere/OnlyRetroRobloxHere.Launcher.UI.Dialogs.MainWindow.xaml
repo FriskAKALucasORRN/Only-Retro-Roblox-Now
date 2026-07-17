@@ -59,6 +59,8 @@
                         <controls:SelectableButton Click="OnNavigationButtonClick" Content="Settings" Style="{StaticResource RightNavigationButton}" Tag="Settings" />
                         <Separator />
                         <controls:SelectableButton Click="OnNavigationButtonClick" BorderThickness="0" Content="About" Style="{StaticResource RightNavigationButton}" Tag="About" />
+                        <Separator />
+                        <controls:SelectableButton Click="OnNavigationButtonClick" BorderThickness="0" Content="Docs" Style="{StaticResource RightNavigationButton}" Tag="About" />
                     </StackPanel>
                     <Border Height="10" SnapsToDevicePixels="True" UseLayoutRounding="True">
                         <Border.Background>
