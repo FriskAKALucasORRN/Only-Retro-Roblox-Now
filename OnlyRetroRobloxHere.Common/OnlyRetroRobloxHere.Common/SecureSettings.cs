@@ -15,7 +15,9 @@ public class SecureSettings
 
 	public string RobloxCookie { get; set; } = "";
 
-	private static string? DecryptData(byte[] encryptedData)
+	public string AssetUrl { get; set; } = "";
+
+    private static string? DecryptData(byte[] encryptedData)
 	{
 		try
 		{

@@ -50,7 +50,24 @@ internal class LauncherSettingsViewModel : ViewModelBase
 		}
 	}
 
-	public string RobloxCookie
+	public string AssetUrl
+	{
+		get
+		{
+			return SecureSettings.Default.AssetUrl;
+		}
+		set
+		{
+			if (SecureSettings.Default.AssetUrl != value)
+			{
+				SecureSettings.Default.AssetUrl = value;
+				OnPropertyChanged("AssetUrl");
+			}
+		}
+    }
+
+
+    public string RobloxCookie
 	{
 		get
 		{

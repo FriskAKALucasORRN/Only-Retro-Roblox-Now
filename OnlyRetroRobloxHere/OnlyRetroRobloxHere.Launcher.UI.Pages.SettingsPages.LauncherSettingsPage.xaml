@@ -57,7 +57,7 @@
                     <TextBlock Style="{StaticResource TextBlockWhite}" Text="      If you're too lazy to get a cookie, change the Asset Delivery URL instead!" Height="16" />
                 </StackPanel>
                 <!-- This code is so poorly written it's held up by noodle sticks. -->
-                <TextBox Name="AssetURL" ToolTip="Enter a custom Asset Delivery URL. Useful for older Windows versions [XP/Vista/7/8/8.1] and also if you dont want to put in a cookie."/>
+                <TextBox Name="AssetURLBox" ToolTip="Enter a custom Asset Delivery URL. Useful for older Windows versions [XP/Vista/7/8/8.1] and also if you dont want to put in a cookie."/>
             </StackPanel>
         </GroupBox>
     </StackPanel>

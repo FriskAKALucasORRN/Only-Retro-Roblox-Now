@@ -40,17 +40,25 @@ public partial class LauncherSettingsPage : BasePage, IComponentConnector
 		SecureSettings.Default.RobloxCookie = RobloxCookieBox.Password;
 	}
 
-	public override void OnPageOpening()
+	private void OnAssetUrlChanged(object sender, RoutedEventArgs e)
+	{
+		SecureSettings.Default.AssetUrl = AssetURLBox.Text;
+    }
+
+    public override void OnPageOpening()
 	{
 		RobloxCookieBox.Password = SecureSettings.Default.RobloxCookie;
 		RobloxCookieBox.PasswordChanged += OnRobloxCookieChanged;
-		base.OnPageOpening();
+        AssetURLBox.Text = SecureSettings.Default.AssetUrl;
+        AssetURLBox.TextChanged += OnAssetUrlChanged;
+        base.OnPageOpening();
 	}
 
 	public override void OnPageClosing()
 	{
 		RobloxCookieBox.PasswordChanged -= OnRobloxCookieChanged;
-		base.OnPageClosing();
+        AssetURLBox.TextChanged -= OnAssetUrlChanged;
+        base.OnPageClosing();
 	}
 
 }
